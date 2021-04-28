@@ -11,7 +11,7 @@ def get_music(id,name,proxies=proxies, headers=headers):
     :param headers:
     :return:
     """
-    URL = "http://music.163.com/song/media/outer/url?id=%s.mp3"%id
+    URL = "url"%id
     try:
         response = requests.get(URL, proxies=proxies, headers=headers)
         with open("./music_data/%s.mp3"%name, "wb") as f:
@@ -27,7 +27,7 @@ def getID(artist_id):
     :param artist_id:
     :return:
     """
-    URL = "https://music.163.com/artist?id=%s"%artist_id # 原址中的#删掉
+    URL = "url"%artist_id # 原址中的#删掉
     response = requests.get(URL, proxies=proxies, headers=headers)
     # 使用正则表达式将歌曲信息匹配出来
     # <a href="/song?id=65766">富士山下</a>
