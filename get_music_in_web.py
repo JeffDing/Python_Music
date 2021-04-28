@@ -4,7 +4,7 @@ from utils.settings import headers,proxies
 # 爬虫程序需要经常维护，如果程序不能正常获取数据需要对页面进行分析，对程序做修改
 def get_music(id,name,proxies=proxies, headers=headers):
     """
-    通过网易云外链获取音乐文件
+    获取音乐文件
     :param id: 歌曲对应的ID
     :param name: 歌曲名称，用于保存文件
     :param proxies:
@@ -23,7 +23,6 @@ def get_music(id,name,proxies=proxies, headers=headers):
 def getID(artist_id):
     """
     根据歌手的ID获取其对应页面的所有歌曲ID（歌手的ID可以通过网易云歌手页面查看）
-    如，https://music.163.com/#/artist?id=2116（对应^陈奕迅^）
     :param artist_id:
     :return:
     """
