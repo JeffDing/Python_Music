@@ -22,7 +22,7 @@ def get_music(id,name,proxies=proxies, headers=headers):
 
 def getID(artist_id):
     """
-    根据歌手的ID获取其对应页面的所有歌曲ID（歌手的ID可以通过网易云歌手页面查看）
+    根据歌手的ID获取其对应页面的所有歌曲ID（歌手的ID可以通过歌手页面查看）
     :param artist_id:
     :return:
     """
